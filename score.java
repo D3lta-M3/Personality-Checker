@@ -29,24 +29,114 @@ public class score{
     ((m.charAt(3) == 'j') || (m.charAt(3) == 'p'))){
       // valid data input
       if (m.charAt(0) == 'i'){
+        // i _ _ _
         if (m.charAt(1) == 'n'){
-
+          // i n _ _
+          if (m.charAt(2) == 't'){
+            // i n t _
+            if (m.charAt(3) == 'j'){
+              // i n t j
+              mbti = "intj";
+            }
+            else {
+              // i n t p
+              mbti = "intp";
+            }
+          }
+          else{
+            // i n f _
+            if (m.charAt(3) == 'j'){
+              // i n f j
+              mbti = "infj";
+            }
+            else {
+              // i n f p
+              mbti = "infp";
+            }
+          }
         }
         else{
-
+          // i s _ _
+          if (m.charAt(2) == 't'){
+            // i s t _
+            if (m.charAt(3) == 'j'){
+              // i s t j
+              mbti = "istj";
+            }
+            else {
+              // i s t p
+              mbti = "istp";
+            }
+          }
+          else{
+            // i s f _
+            if (m.charAt(3) == 'j'){
+              // i s f j
+              mbti = "isfj";
+            }
+            else {
+              // i s f p
+              mbti = "isfp";
+            }
+          }
         }
       }
-      else {
+      else{
+        // e _ _ _
         if (m.charAt(1) == 'n'){
-
+          // e n _ _
+          if (m.charAt(2) == 't'){
+            // e n t _
+            if (m.charAt(3) == 'j'){
+              // e n t j
+              mbti = "entj";
+            }
+            else {
+              // e n t p
+              mbti = "entp";
+            }
+          }
+          else{
+            // e n f _
+            if (m.charAt(3) == 'j'){
+              // e n f j
+              mbti = "enfj";
+            }
+            else {
+              // e n f p
+              mbti = "enfp";
+            }
+          }
         }
         else{
-          
+          // e s _ _
+          if (m.charAt(2) == 't'){
+            // e s t _
+            if (m.charAt(3) == 'j'){
+              // e s t j
+              mbti = "estj";
+            }
+            else {
+              // e s t p
+              mbti = "estp";
+            }
+          }
+          else{
+            // e s f _
+            if (m.charAt(3) == 'j'){
+              // e s f j
+              mbti = "esfj";
+            }
+            else {
+              // e s f p
+              mbti = "esfp";
+            }
+          }
         }
       }
     }
     else {
-      System.out.println("Please retry again and give the data in lowercase");
+      // invalid data input
     }
   }
 }
