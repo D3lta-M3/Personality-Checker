@@ -26,7 +26,8 @@ public class score{
     ((m.charAt(0) == 'i') || (m.charAt(0) == 'e')) && 
     ((m.charAt(1) == 'n') || (m.charAt(1) == 's')) &&
     ((m.charAt(2) == 't') || (m.charAt(2) == 'f')) &&
-    ((m.charAt(3) == 'j') || (m.charAt(3) == 'p'))){
+    ((m.charAt(3) == 'j') || (m.charAt(3) == 'p')) &&
+    (m.length() == 4)){
       // valid data input
       if (m.charAt(0) == 'i'){
         // i _ _ _
@@ -138,5 +139,9 @@ public class score{
     else {
       // invalid data input
     }
+  }
+
+  public String getMBTI(){
+    return mbti;
   }
 }
