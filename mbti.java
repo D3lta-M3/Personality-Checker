@@ -11,8 +11,8 @@ public class mbti{
     Scanner yesOrNo_scanner = new Scanner(System.in);
     System.out.println("Have you taken the Meyers Briggs Personality Test? 'y' or 'n'.");
     String yesOrNo = yesOrNo_scanner.nextLine();
-    if 
-
+    
+    if (yesOrNo.charAt(0) == 'n'{
       Scanner mbti_scanner = new Scanner(System.in);
       System.out.println("Are you introverted or extroverted? Please respond with either 'i' for introverted or 'e' for extroverted.");
       String iOrE = mbti_scanner.nextLine();
@@ -23,7 +23,7 @@ public class mbti{
         mbti_1 = 25;
       }
       else{
-        mbti_1 = null;
+        mbti_1 = 200;
         System.out.println("Please dont break me. :(");
       }
       
@@ -36,7 +36,7 @@ public class mbti{
         mbti_2 = 25;
       }
       else{
-        mbti_2 = null;
+        mbti_2 = 200;
         System.out.println("Please dont break me. :(");
       }
 
@@ -49,7 +49,7 @@ public class mbti{
         mbti_3 = 25;
       }
       else{
-        mbti_3 = null;
+        mbti_3 = 200;
         System.out.println("Please dont break me. :(");
       }
 
@@ -62,8 +62,121 @@ public class mbti{
         mbti_4 = 25;
       }
       else{
-        mbti_4 = null;
+        mbti_4 = 200;
         System.out.println("Please dont break me. :(");
       }
+      if ((mbti_1 == 200 || mbti_1 > 100 || mbti1 < 0) ||
+      (mbti_2 == 200 || mbti_2 > 100 || mbti_2 < 0) ||
+      (mbti_3 == 200 || mbti_3 > 100 || mbti_3 < 0) ||
+      (mbti_4 == 200 || mbti_4 > 100 || mbti_4 < 0)){
+        // data invalid
+        System.out.println("Data was invalid, please try again");
+      }
+
+      else {
+        // data valid
+        if (mbti_1 > 50){
+          // i _ _ _
+          if (mbti_2 > 50){
+            //i n _ _
+            if (mbti_3 >50){
+              //i n t _
+              if (mbti_4 > 50){
+                //i n t j
+              }
+              else {
+                //i n t p
+              }
+            }
+            else{
+              //i n s _
+              if (mbti_4 > 50){
+                //i n s j
+              }
+              else {
+                //i n s p
+              }
+            }
+
+          }
+          else{
+            //i f _ _
+            if (mbti_3 >50){
+              //i f t _
+              if (mbti_4 > 50){
+                //i f t j
+              }
+              else {
+                //i f t p
+              }
+            }
+            else{
+              //i f s _
+              if (mbti_4 > 50){
+                //i f s j
+              }
+              else {
+                //i f s p
+              }
+            }
+
+          }
+        }
+        else{
+          // e _ _ _
+          if (mbti_2 > 50){
+            // e n _ _
+            if (mbti_3 >50){
+              // e n t _
+              if (mbti_4 > 50){
+                // e n t j
+              }
+              else {
+                // e n t p
+              }
+            }
+            else{
+              // e n s _
+              if (mbti_4 > 50){
+                // e n s j
+              }
+              else {
+                // e n s p
+              }
+            }
+
+          }
+          else{
+            // e f _ _
+            if (mbti_3 >50){
+              // e f t _
+              if (mbti_4 > 50){
+                // e f t j
+              }
+              else {
+                // e f t p
+              }
+            }
+            else{
+              // e f s _
+              if (mbti_4 > 50){
+                // e f s j
+              }
+              else {
+                // e f s p
+              }
+            }
+
+          }
+        }
+      }
+
+    else if (yesOrNo.charAt(0) == 'y'){
+      Scanner mbti_result = new Scanner(System.in);
+      System.out.println("What is your personality type? Please make sure that all 4 letters are lowercase and all together.");
+      String mbti_result_string = mbti_result.nextLine();
+      //stores data
+      updateMBTI(mbti_result_string);
+    }
   }
 }
