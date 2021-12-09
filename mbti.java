@@ -83,18 +83,22 @@ public class mbti{
               //i n t _
               if (mbti_4 > 50){
                 //i n t j
+                updateMBTI("intj");
               }
               else {
                 //i n t p
+                updateMBTI("intp");
               }
             }
             else{
               //i n s _
               if (mbti_4 > 50){
                 //i n s j
+                updateMBTI("insj");
               }
               else {
                 //i n s p
+                updateMBTI("insp");
               }
             }
 
@@ -105,18 +109,22 @@ public class mbti{
               //i f t _
               if (mbti_4 > 50){
                 //i f t j
+                updateMBTI("iftj");
               }
               else {
                 //i f t p
+                updateMBTI("iftp");
               }
             }
             else{
               //i f s _
               if (mbti_4 > 50){
                 //i f s j
+                updateMBTI("ifsj");
               }
               else {
                 //i f s p
+                updateMBTI("ifsp");
               }
             }
 
@@ -130,18 +138,22 @@ public class mbti{
               // e n t _
               if (mbti_4 > 50){
                 // e n t j
+                updateMBTI("entj");
               }
               else {
                 // e n t p
+                updateMBTI("entp");
               }
             }
             else{
               // e n s _
               if (mbti_4 > 50){
                 // e n s j
+                updateMBTI("ensj");
               }
               else {
                 // e n s p
+                updateMBTI("ensp");
               }
             }
 
@@ -152,21 +164,26 @@ public class mbti{
               // e f t _
               if (mbti_4 > 50){
                 // e f t j
+                updateMBTI("eftj");
               }
               else {
                 // e f t p
+                updateMBTI("eftp");
               }
             }
             else{
               // e f s _
               if (mbti_4 > 50){
                 // e f s j
+                updateMBTI("efsj");
               }
               else {
                 // e f s p
+                updateMBTI("efsp");
               }
             }
 
+updateMBTI("ef");
           }
         }
       }
