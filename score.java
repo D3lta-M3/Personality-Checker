@@ -1,9 +1,9 @@
 public class score{
   private String mbti;
   private int ricepure;
-
-  public score(String m, int r){
-    mbti = m;
+  
+  public score(String m, int r,String obj_name){
+    obj_name.updateRice(r);
     ricepure = r;
   }
 
