@@ -12,7 +12,7 @@ public class mbti{
     System.out.println("Have you taken the Meyers Briggs Personality Test? 'y' or 'n'.");
     String yesOrNo = yesOrNo_scanner.nextLine();
     
-    if (yesOrNo.charAt(0) == 'n'{
+    if (yesOrNo.charAt(0) == 'n'){
       Scanner mbti_scanner = new Scanner(System.in);
       System.out.println("Are you introverted or extroverted? Please respond with either 'i' for introverted or 'e' for extroverted.");
       String iOrE = mbti_scanner.nextLine();
@@ -65,7 +65,7 @@ public class mbti{
         mbti_4 = 200;
         System.out.println("Please dont break me. :(");
       }
-      if ((mbti_1 == 200 || mbti_1 > 100 || mbti1 < 0) ||
+      if ((mbti_1 == 200 || mbti_1 > 100 || mbti_1 < 0) ||
       (mbti_2 == 200 || mbti_2 > 100 || mbti_2 < 0) ||
       (mbti_3 == 200 || mbti_3 > 100 || mbti_3 < 0) ||
       (mbti_4 == 200 || mbti_4 > 100 || mbti_4 < 0)){
@@ -182,11 +182,10 @@ public class mbti{
                 updateMBTI("efsp");
               }
             }
-
-updateMBTI("ef");
           }
         }
       }
+    }
 
     else if (yesOrNo.charAt(0) == 'y'){
       Scanner mbti_result = new Scanner(System.in);
