@@ -4,7 +4,7 @@ public class score{
   
   public score(String m, int r,String obj_name){
     obj_name.updateRice(r);
-    ricepure = r;
+    obj_name.updateMBTI(m);
   }
 
   public void updateRice(int r){
