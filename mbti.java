@@ -7,7 +7,7 @@ public class mbti{
   private double mbti_3; // higher is t
   private double mbti_4; // higher is j
 
-  public void mbtiTest(){
+  public void mbtiTest(String user_profile){
     Scanner yesOrNo_scanner = new Scanner(System.in);
     System.out.println("Have you taken the Meyers Briggs Personality Test? 'y' or 'n'.");
     String yesOrNo = yesOrNo_scanner.nextLine();
@@ -83,22 +83,22 @@ public class mbti{
               //i n t _
               if (mbti_4 > 50){
                 //i n t j
-                updateMBTI("intj");
+                user_profile.updateMBTI("intj");
               }
               else {
                 //i n t p
-                updateMBTI("intp");
+                user_profile.updateMBTI("intp");
               }
             }
             else{
               //i n s _
               if (mbti_4 > 50){
                 //i n s j
-                updateMBTI("insj");
+                user_profile.updateMBTI("insj");
               }
               else {
                 //i n s p
-                updateMBTI("insp");
+                user_profile.updateMBTI("insp");
               }
             }
 
@@ -109,22 +109,22 @@ public class mbti{
               //i f t _
               if (mbti_4 > 50){
                 //i f t j
-                updateMBTI("iftj");
+                user_profile.updateMBTI("iftj");
               }
               else {
                 //i f t p
-                updateMBTI("iftp");
+                user_profile.updateMBTI("iftp");
               }
             }
             else{
               //i f s _
               if (mbti_4 > 50){
                 //i f s j
-                updateMBTI("ifsj");
+                user_profile.updateMBTI("ifsj");
               }
               else {
                 //i f s p
-                updateMBTI("ifsp");
+                user_profile.updateMBTI("ifsp");
               }
             }
 
@@ -138,22 +138,22 @@ public class mbti{
               // e n t _
               if (mbti_4 > 50){
                 // e n t j
-                updateMBTI("entj");
+                user_profile.updateMBTI("entj");
               }
               else {
                 // e n t p
-                updateMBTI("entp");
+                user_profile.updateMBTI("entp");
               }
             }
             else{
               // e n s _
               if (mbti_4 > 50){
                 // e n s j
-                updateMBTI("ensj");
+                user_profile.updateMBTI("ensj");
               }
               else {
                 // e n s p
-                updateMBTI("ensp");
+                user_profile.updateMBTI("ensp");
               }
             }
 
@@ -164,22 +164,22 @@ public class mbti{
               // e f t _
               if (mbti_4 > 50){
                 // e f t j
-                updateMBTI("eftj");
+                user_profile.updateMBTI("eftj");
               }
               else {
                 // e f t p
-                updateMBTI("eftp");
+                user_profile.updateMBTI("eftp");
               }
             }
             else{
               // e f s _
               if (mbti_4 > 50){
                 // e f s j
-                updateMBTI("efsj");
+                user_profile.updateMBTI("efsj");
               }
               else {
                 // e f s p
-                updateMBTI("efsp");
+                user_profile.updateMBTI("efsp");
               }
             }
           }
@@ -192,7 +192,10 @@ public class mbti{
       System.out.println("What is your personality type? Please make sure that all 4 letters are lowercase and all together.");
       String mbti_result_string = mbti_result.nextLine();
       //stores data
-      updateMBTI(mbti_result_string);
+      user_profile.updateMBTI(mbti_result_string);
+    }
+    else{
+      System.out.println("Invalid response");
     }
   }
 }
