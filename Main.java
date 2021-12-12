@@ -136,10 +136,27 @@ class Main {
       else if(response_first.charAt(0) == '4'){
         // take test method
 
+        System.out.println("What profile do you want to take a test under?")
+        String user_profile = program_loop_scan.nextLine();
+        
         System.out.println("What test do you want to take? Enter '1' to take the MBTI test. \n Enter '2' to take the rice purity test. \n Enter '3' to exit the loop.");
         String response_second = program_loop_scan.nextLine();
 
-        
+        if (response_second.charAt(0) == '1'){
+          user_profile.mbtiTEST(user_profile);
+          System.out.println(user_profile.getMBTI());
+        }
+
+        else if(response_second.charAt(0) == '2'){
+          user_profile.riceTest(user_profile);
+          System.out.println(user_profile.getRice());
+        }
+        else if(response_second.charAt(0) == '3'){
+          break;
+        }
+        else{
+          System.out.println("Invalid response recieved");
+        }
       }
       else if(response_first.charAt(0) == '5'){
         // break
@@ -147,6 +164,7 @@ class Main {
       }
       else{
         // invalid response
+        System.out.println("Invalid response recieved");
       }
 
     }
