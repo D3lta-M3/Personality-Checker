@@ -19,7 +19,7 @@ class Main {
       String response_first = program_loop_scan.nextLine();
       if (response_first.charAt(0) == '1'){
         // profile creation
-        System.out.println("What is the name of this profile which you want to create?")
+        System.out.println("What is the name of this profile which you want to create?");
         String profile_name = program_loop_scan.nextLine();
         
         // 1 - both tests
@@ -78,7 +78,7 @@ class Main {
 
         else{
           // invalid response
-          System.out.println("Invalid response recieved.")
+          System.out.println("Invalid response recieved.");
         }
         
       }
@@ -114,7 +114,7 @@ class Main {
       else if(response_first.charAt(0) == '3'){
         // getter methods
 
-        System.out.println("What profile do you want to view?")
+        System.out.println("What profile do you want to view?");
         String user_profile = program_loop_scan.nextLine();
 
         System.out.println("What data do you want to access? \n Enter '1' for MBTI results. \n Enter '2' for Rice Purity Results. \n Enter '3' to exit the loop.");
@@ -136,7 +136,7 @@ class Main {
       else if(response_first.charAt(0) == '4'){
         // take test method
 
-        System.out.println("What profile do you want to take a test under?")
+        System.out.println("What profile do you want to take a test under?");
         String user_profile = program_loop_scan.nextLine();
         
         System.out.println("What test do you want to take? Enter '1' to take the MBTI test. \n Enter '2' to take the rice purity test. \n Enter '3' to exit the loop.");

@@ -3,7 +3,7 @@ import java.util.Scanner;
 public class ricepure{
   private int ricepure_score;
 
-  public void ricepure_test(string user){
+  public void ricepure_test(String user){
     Scanner yesOrNo = new Scanner(System.in);
     
     ricepure_score = 100;
@@ -60,6 +60,7 @@ public class ricepure{
         System.out.println("Invalid response recieved");
         ricepure_score = 5000;
       }
+    }
     else if(q2.charAt(0) == 'n'){}
     else{
       System.out.println("Invalid response recieved");
